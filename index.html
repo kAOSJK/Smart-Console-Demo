@@ -26,15 +26,15 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Smart Console - Demo.loader.js";
+      var loaderUrl = buildUrl + "/SC.Demo.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Smart Console - Demo.data",
-        frameworkUrl: buildUrl + "/Smart Console - Demo.framework.js",
-        codeUrl: buildUrl + "/Smart Console - Demo.wasm",
+        dataUrl: buildUrl + "/SC.Demo.data",
+        frameworkUrl: buildUrl + "/SC.Demo.framework.js",
+        codeUrl: buildUrl + "/SC.Demo.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "EdgarDev",
-        productName: "Smart Console - Demo",
-        productVersion: "2.0",
+        companyName: "DefaultCompany",
+        productName: "SC.Feature",
+        productVersion: "0.1",
       };
 
       var container = document.querySelector("#unity-container");
@@ -52,8 +52,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "1280px";
-        canvas.style.height = "720px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
 
